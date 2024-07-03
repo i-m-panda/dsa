@@ -1,4 +1,4 @@
- - asymtotic analysis is used to measure the order of growth
+ - asymptotic analysis is used to measure the order of growth
  - it's machine, language, etc. independent
  - we can analyse pseudo code or algorithm before implementing it
  - order of growth(general trend) is dependent on largest number of operation in a program
