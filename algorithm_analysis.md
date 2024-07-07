@@ -55,3 +55,30 @@ considering placeBet() code, assuming placeBet() is called 100 times
 ## Worst Case(most helpful and usually used)
 - all the places bets are even
 - order of growth: linear
+
+# Order of growth
+#### mathematically f(n) is said to growing faster than g(n) if following conditions are true, where f(n) and g(n) are time taken by the algorithm and n>=0, f(n),g(n) >=0:
+- Limit(n->infinity) g(n)/f(n) = 0
+- Limit(n->infinity) f(n)/g(n) = infinity
+
+#### direct way to determine order of growth and compare them:
+- ignore lower order terms
+- ignore constant of leading term
+
+for comparision follow the following presidence:
+c < log log n < log n < n^(1/3) < n^(1/2) < n < n^2 < n^3 < n^4 < 2^n < n^n
+
+for example:\
+f(n): 3n^2 + 2n + 5 = n^2(quadratic)\
+g(n): 2n + 4 = n(linear)\
+h(n): 8 = c(constant)
+
+as n^2 is greater that c or n, therefore f(n) order of growth is highest and h(n) is lowest
+
+if you compare these order of growths:\
+f(n): n^2\
+g(n): n log n\
+you can divide both order of growth by n which will lead:\
+f(n): n\
+g(n): log n\
+now we can clearly see that f(n) order of growth > g(n) order of growth
